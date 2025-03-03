@@ -25,7 +25,7 @@ div h1 {
   border: 10px dashed #606a77;
   border-radius: 1000px;
   width: 500px;
-  left: 420px;
+  left: 523px;
 }
 
 ul {
@@ -60,7 +60,7 @@ a:hover {
 .name-container ul {
   position: absolute;
   right: 200px;
-  bottom: 80px;
+  bottom: 119px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -75,8 +75,8 @@ a:hover {
 img {
   position: absolute;
   flex-wrap: wrap;
-  bottom: 80px;
-  left: 750px;
+  bottom: 110px;
+  left: 950px;
 }
 
 .logo-container img {
