@@ -1,20 +1,29 @@
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: darkcyan;
+  background-color: #9AA6B2;
 }
 
 h1 {
   width: 100%;
   font-size: 80px;
+  font-family: "Lemon", serif;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   position: absolute;
   top: 0;
   left: 0;
   margin-top: 80px;
-  color: rgba(214, 210, 186, 0.962);
+  color: #343941;
+}
+
+div h1 {
+  border: 3px solid #9aa6b2;
+  border-radius: 80px;
 }
 
 ol {
@@ -46,7 +55,7 @@ a:hover {
   overflow-wrap: break-word;
 }
 
-.name-container li {
+.name-container ol {
   position: absolute;
   right: 310px;
   bottom: 120px;
@@ -61,12 +70,24 @@ a:hover {
   break-inside: avoid;
 }
 
+img {
+  position: absolute;
+  flex-wrap: wrap;
+  bottom: 10px;
+  left: 700px;
+}
+
+.logo-container img {
+  height: 500px;
+
+}
+
 li {
   margin-bottom: 10px;
 }
 
 li a {
-  color: lightblue;
+  color: #343941;
   text-decoration: none;
 }
 
