@@ -59,8 +59,8 @@ a:hover {
 
 .name-container ol {
   position: absolute;
-  right: 310px;
-  bottom: 120px;
+  right: 200px;
+  bottom: 80px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -75,7 +75,7 @@ a:hover {
 img {
   position: absolute;
   flex-wrap: wrap;
-  bottom: 100px;
+  bottom: 80px;
   left: 750px;
 }
 
