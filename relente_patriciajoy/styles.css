@@ -23,6 +23,7 @@ h2 {
     text-align: center;
     color: rgb(36, 29, 29);
     font-style: italic;
+    padding: 10px;
 }
 
 .interest-hobbies {
@@ -30,13 +31,28 @@ h2 {
     border-radius: 10px;
     border-color: #33272a;
     background-color: #ffc6c7;
+    padding: 10px;
 }
 
-.myworks {
+.my-works {
     border: 1px solid;
     border-radius: 10px;
     border-color: #33272a;
     background-color: #ff8ba7;
+    padding: 10px;
+}
+
+.interest-hobbies ul, .my-works ol {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
 }
 
 .testimonial {
@@ -44,6 +60,7 @@ h2 {
     border-radius: 10px;
     border-color: #33272a;
     background-color: #ffc6c7;
+    padding: 10px;
 }
 
 .container{
@@ -60,10 +77,4 @@ h2 {
     aspect-ratio: 16/9;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px --2px, rgba(0, 0, 0, 0.3) 0px 3px
     7px --3px; 
-}
-
-@media (max-width:572px) {
-    body {
-        height: 100px;
-    }
 }
