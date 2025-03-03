@@ -73,13 +73,12 @@ a:hover {
 img {
   position: absolute;
   flex-wrap: wrap;
-  bottom: 10px;
-  left: 700px;
+  bottom: 100px;
+  left: 750px;
 }
 
 .logo-container img {
-  height: 500px;
-
+  height: 300px;
 }
 
 li {
