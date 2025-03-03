@@ -22,8 +22,8 @@ h1 {
 }
 
 div h1 {
-  border: 3px solid #9aa6b2;
-  border-radius: 80px;
+  border: 10px dashed #606a77;
+  border-radius: 1000px;
 }
 
 ol {
