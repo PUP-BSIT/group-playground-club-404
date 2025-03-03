@@ -28,7 +28,7 @@ div h1 {
   left: 420px;
 }
 
-ol {
+ul {
   list-style-type: none;
   padding: 0px;
 }
@@ -57,7 +57,7 @@ a:hover {
   overflow-wrap: break-word;
 }
 
-.name-container ol {
+.name-container ul {
   position: absolute;
   right: 200px;
   bottom: 80px;
