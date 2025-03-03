@@ -1,0 +1,117 @@
+/* For variables (colors etc.) */
+:root {
+    --color1: #222831;
+    --color2: #31363F;
+    --color3: #76ABAE;
+    --color4: #EEEEEE;
+    --color5: #1E3E62;
+}
+
+/* * - all styles are applied to HTML elements */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+/* target: header container */
+.header-container {
+    background-color: var(--color2);
+    display: flex; /* flex makes div merge together */
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    padding-bottom: 0px;
+    margin: auto;
+}
+
+/* target: name(Justine Delima) */
+.name-container {
+    height: 100px;
+    max-width: 15%;
+    margin-top: 30px;
+}
+
+/* target: pixel image */
+.pixel-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+/* target: header 1 */
+h1 {
+    color: var(--color4)
+}
+
+/* target: header 2 */
+h2 {
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* target: interest & hobbies container */
+.inthobb-container {
+    padding: 50px 50px;
+    border: 5px dashed var(--color2);
+}
+
+/* target: interest & hobbies unordered list */
+.inthobb-container ul {
+    color: var(--color4);
+    font-weight: lighter;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+/* target: my works */
+.works-container {
+    border: 5px solid var(--color2);
+    padding: 50px 50px;
+    margin: auto;
+}
+
+/* target: my works ordered list */
+.works-container ol {
+    color: var(--color4);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 0;
+}
+
+/* target: my works links */
+.links-container ol a {
+    color: var(--color4);
+    text-decoration: none;
+    border: 3px solid var(--color2);
+    padding: 4px 15px;
+    background-color: var(--color5); 
+}
+
+/* target: testimonials */
+.testimonials-container {
+    padding: 50px 50px;
+    border: 5px solid var(--color2);
+}
+
+/* target: my gallery */
+.gallery-container {
+    padding: 50px 50px;
+    border: 5px solid var(--color2);
+}
+
+.gallery-container img {
+    display: flexbox;
+    margin-left: 70px;
+    height: 300px;
+    width: 500px;
+}
