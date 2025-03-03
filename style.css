@@ -24,6 +24,8 @@ h1 {
 div h1 {
   border: 10px dashed #606a77;
   border-radius: 1000px;
+  width: 500px;
+  left: 380px;
 }
 
 ol {
