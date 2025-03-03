@@ -1,0 +1,69 @@
+.name {
+    background-color: #33272a;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faeee7;
+    color: #594a4e;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+    color: #fffffe;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(36, 29, 29);
+    font-style: italic;
+}
+
+.interest-hobbies {
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #33272a;
+    background-color: #ffc6c7;
+}
+
+.myworks {
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #33272a;
+    background-color: #ff8ba7;
+}
+
+.testimonial {
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #33272a;
+    background-color: #ffc6c7;
+}
+
+.container{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: 90%;
+    margin: 5rem auto 0 auto;
+    flex-wrap: wrap;
+}
+
+.container img{
+    width: 250px;
+    aspect-ratio: 16/9;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px --2px, rgba(0, 0, 0, 0.3) 0px 3px
+    7px --3px; 
+}
+
+@media (max-width:572px) {
+    body {
+        height: 100px;
+    }
+}
