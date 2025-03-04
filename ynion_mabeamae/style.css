@@ -4,7 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+              "Lucida Sans", Arial, sans-serif;
   align-items: center;
 }
 
@@ -114,12 +114,9 @@ ul, ol {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: nowrap;
-  font-size: 20px;
+  font-size: 17px;
   padding: 1rem;
-}
-
-.testimonials p {
-  margin: 1rem;
+  margin: 2em;
 }
 
 p {
@@ -130,6 +127,7 @@ p {
   border-radius: 10px;
   height: 10vh;
   flex-direction: row;
+  text-align: center;
 }
 
 .photos {
