@@ -25,22 +25,27 @@ h2 {
     color: rgb(36, 29, 29);
     font-style: italic;
     padding: 10px;
+    border: 4px solid;
+    border-radius: 25px;
+    width: fit-content;
+    display: block;
+    margin: auto;
 }
 
 .interest-hobbies {
-    border: 1px solid;
     border-radius: 10px;
     border-color: #33272a;
     background-color: #ffc6c7;
     padding: 10px;
+    margin-top: 10px;
 }
 
 .my-works {
-    border: 1px solid;
     border-radius: 10px;
     border-color: #33272a;
     background-color: #ff8ba7;
     padding: 10px;
+    margin-top: 10px;
 }
 
 .cont {
@@ -66,25 +71,29 @@ li {
 }
 
 .testimonial {
-    border: 1px solid;
     border-radius: 10px;
     border-color: #33272a;
     background-color: #ffc6c7;
     padding: 10px;
+    margin-top: 10px;
 }
 
-.container{
+.my-gallery {
+    margin-top: 10px;
+}
+
+.container {
     display: flex;
     gap: 1rem;
     justify-content: center;
     width: 90%;
-    margin: 5rem auto 0 auto;
+    margin: 30px;
     flex-wrap: wrap;
 }
 
-.container img{
+.container img {
     width: 250px;
     aspect-ratio: 16/9;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px --2px, rgba(0, 0, 0, 0.3) 0px 3px
-    7px --3px; 
+    object-fit: contain;
+    background-color: white;
 }
