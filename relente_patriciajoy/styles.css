@@ -1,5 +1,6 @@
 .name {
     background-color: #33272a;
+    background: url(./images/pic.jpg);
 }
 
 body {
@@ -15,8 +16,8 @@ body {
 h1 {
     font-family: 'Inter', sans-serif;
     text-align: center;
-    padding-top: 2rem;
-    color: #fffffe;
+    padding-top: 2.5in;
+    color: #33272a;
 }
 
 h2 {
