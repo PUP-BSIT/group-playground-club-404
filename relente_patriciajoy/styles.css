@@ -1,6 +1,12 @@
-.name {
-    background: url(./images/pic.jpg);
-    justify-content: center;
+.bg-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-image img {
+    border-radius: 50%;
+    border: 10px solid;
 }
 
 body {
@@ -14,10 +20,9 @@ body {
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-size: 50px;
     text-align: center;
-    padding-top: 2.5in;
     color: black;
 }
 
