@@ -60,7 +60,7 @@ a:hover {
 .name-container ul {
   position: absolute;
   right: 250px;
-  bottom: 12px;
+  bottom: 30px;
   width: 100%;
   display: flex;
   align-items: center;
