@@ -17,7 +17,7 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 120px;
+  margin-top: 60px;
   color: #343941;
 }
 
@@ -25,7 +25,7 @@ div h1 {
   border: 10px dashed #606a77;
   border-radius: 1000px;
   width: 500px;
-  left: 523px;
+  left: 390px;
 }
 
 ul {
@@ -59,8 +59,8 @@ a:hover {
 
 .name-container ul {
   position: absolute;
-  right: 200px;
-  bottom: 119px;
+  right: 250px;
+  bottom: 12px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -75,8 +75,8 @@ a:hover {
 img {
   position: absolute;
   flex-wrap: wrap;
-  bottom: 115px;
-  left: 950px;
+  bottom: 40px;
+  right: 250px;
 }
 
 .logo-container img {
@@ -84,7 +84,7 @@ img {
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 li a {
