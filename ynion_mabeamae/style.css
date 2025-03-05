@@ -143,16 +143,9 @@ p {
   margin: 0px;
   padding: 1vw;
   gap: 2rem;
-  object-fit: cover;
-  transition: 0.5s ease-out;
-  cursor: pointer;
   border: 2px solid lightblue;
   border-radius: 10px;
   margin-bottom: 2rem;
-}
-
-.photos img:hover {
-  transform: scale(1.2);
 }
 
 .container {
