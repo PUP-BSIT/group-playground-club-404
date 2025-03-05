@@ -81,6 +81,10 @@ h2 {
   border: 5px solid black;
   width: 470px;
   height: 400px;
+  background-image: url(./images/appreciation.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: 50px 260px;
 }
 
 body {
