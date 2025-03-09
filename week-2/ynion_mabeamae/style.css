@@ -146,6 +146,13 @@ p {
   border: 2px solid lightblue;
   border-radius: 10px;
   margin-bottom: 2rem;
+  object-fit: cover;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.photos img:hover {
+  transform: scale(1.1);
 }
 
 .container {
