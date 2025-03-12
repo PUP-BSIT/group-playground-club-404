@@ -154,13 +154,3 @@ p {
 .photos img:hover {
   transform: scale(1.1);
 }
-
-.container {
-  background-color: #1b497a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: #5ce6f8be;
-  font-size: 30px;
-}

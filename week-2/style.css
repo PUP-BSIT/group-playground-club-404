@@ -3,37 +3,17 @@ body {
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-image: url(dino.gif);
-  background-position: left center;
-  background-size: 150%;
+  background-image: url(Club404-cover.jpg);
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-h1 {
-  width: 100%;
-  font-size: 80px;
-  font-family: "Lemon", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 60px;
-  color: #343941;
-}
-
-div h1 {
-  border: 10px dashed #606a77;
-  border-radius: 1000px;
-  width: 500px;
-  left: 390px;
 }
 
 ul {
@@ -42,17 +22,27 @@ ul {
 }
 
 a {
-  padding: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   margin: 0 auto;
-  font-size: 40px;
+  font-size: 18px;
   flex-wrap: wrap;
   font-weight: 900;
   word-spacing: 2.5px;
+  text-decoration: none;
+  color: white;
+  background-color: #3c3c3c;
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: 0 4px #000;
+  transition: all 0.1s ease;
 }
 
 a:hover {
-  transition: 0.3 ease;
+  background-color: #4c4c4c;
+  box-shadow: 0 2px #000;
+  transform: translateY(2px);
 }
 
 .name-container {
@@ -67,40 +57,18 @@ a:hover {
 
 .name-container ul {
   position: absolute;
-  right: 250px;
-  bottom: 30px;
+  right: 50%;
+  bottom: 290px;
   width: 100%;
+  transform: translateX(50%);
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
   padding: 15px 0;
   break-inside: avoid;
-}
-
-img {
-  position: relative;
-  flex-wrap: wrap;
-  bottom: 0;
-  right: 0;
-}
-
-.logo-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  margin-top: 2rem;
-}
-
-.logo-container img {
-  height: 100%;
-  width: auto;
-  left: 250px;
-  top: 80px;
 }
 
 li {
@@ -108,11 +76,11 @@ li {
 }
 
 li a {
-  color: #343941;
+  color: #fff;
   text-decoration: none;
 }
 
 li a:hover {
-  color: rgb(169, 136, 96);
-  text-decoration: underline;
+  color: #fff;
+  text-decoration: none;
 }
