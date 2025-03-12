@@ -244,6 +244,10 @@ body {
     position: relative;
     bottom: 280px;
     left: 10px;
+    background-image: url(./images/form.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: 2px 2px;
   }
 
   #form > h1 {
@@ -281,9 +285,12 @@ body {
   }
 
   #testimonial {
+    padding: 20px;
     position: relative;
     left: 570px;
-    width: 400px;
+    width: 700px;
+    background-size: 300px;
+    background-position: 410px 200px; 
   }
 
   #testimonial > p {
@@ -316,6 +323,11 @@ body {
     position: relative;
     bottom: 280px;
     left: 10px;
+    background-image: url(./images/form.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: 2px 2px;
+
   }
 
   #form > h1 {
