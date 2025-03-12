@@ -91,3 +91,16 @@ body {
   margin: 0;
   background: #2a2b2dff;
 }
+
+#contact_form {
+  border-radius: 60px;
+  background: #101820ff;
+  height: 90px;
+  width: 300px;
+  border: 5px solid black;
+  color:#A0E7E5;
+  position: relative;
+  bottom: 925px;
+  left: 400px;
+  text-align: center;
+}
