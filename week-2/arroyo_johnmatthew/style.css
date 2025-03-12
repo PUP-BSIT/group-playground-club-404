@@ -160,6 +160,115 @@ body {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  #hobbies {
+    border-radius: 60px;
+    padding: 20px;
+    width: 360px;
+    height: 170px;
+    background: #101820ff;
+    color: #A0E7E5;
+    border: 5px solid black;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+
+  #testimonial {
+    position: relative;
+    left: 450px;
+  }
+
+  #form {
+    background-color: gray;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    position: relative;
+    bottom: 280px;
+    left: 10px;
+  }
+
+  #button {
+    border-radius: 20px;
+    position: relative;
+    left: 120px;
+    top: 8px;
+    background-color: red;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #hobbies {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  #works {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  #testimonial {
+    position: relative;
+    left: 570px;
+    top: 370px;
+    width: 400px;
+  }
+
+  #testimonial > p {
+    font-size: 17px;
+  }
+
+  #gallery {
+    width: 900px;
+    position: relative;
+    left: 50px;
+  }
+
+  .gallery-image-1 {
+    height: 150px;
+    width: 100px;
+    position: relative;
+    left: 150px;
+  }
+
+  #name {
+    font-size: 40px;
+  }
+
+  #form {
+    background-color: gray;
+    border-radius: 20px;
+    padding: 10px;
+    width: 500px;
+    position: relative;
+    bottom: 280px;
+    left: 10px;
+  }
+
+  #form > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #button {
+    border-radius: 20px;
+    position: relative;
+    left: 220px;
+    top: 8px;
+    background-color: red;
+    font-size: 20px;
+  }
+
+  input[type=text], input[type=email] {
+    font-size: 20px;
+  }
+
+  #review {
+    font-size: 20px;
+  }
+}
+
 
 
 

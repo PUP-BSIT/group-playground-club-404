@@ -40,7 +40,8 @@ body {
 .interest h2,
 .my-works h2,
 .testimonials h2,
-.my-picture h2 {
+.my-picture h2,
+.text-info h2 {
   background-color: #04023f;
   text-align: center;
   padding: 10px;
@@ -153,4 +154,374 @@ p {
 
 .photos img:hover {
   transform: scale(1.1);
+}
+
+.contact-form {
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.form-container {
+  background: #3a628c;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  justify-content: space-evenly;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 0;
+  grid-template-areas:
+    "name email"
+    "message message"
+    "sendcopy sendcopy"
+    "submit submit";
+}
+
+.name {
+  grid-area: name;
+}
+
+.email {
+  grid-area: email;
+}
+
+.message {
+  grid-area: message;
+}
+
+.sendcopy {
+  grid-area: sendcopy;
+}
+
+.submit {
+  grid-area: submit;
+}
+
+.form-grid label {
+  color: white;
+  padding: 5px;
+  gap: 10px;
+}
+
+.form-grid input {
+  width: 100%;
+  padding: 7px;
+  border: 2px solid lightblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  color: white;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 7px;
+  border: 2px solid lightblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #2894a7;
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #08446f;
+  color: white;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+.checkbox-container label {
+  margin: 0;
+}
+
+.container {
+  background-color: #1b497a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #5ce6f8be;
+  font-size: 30px;
+}
+
+/* Mobile S */
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+  .header > img {
+    display: none;
+  }
+  .photos img {
+    width: 100%;
+    height: auto;
+  }
+  .interest ul,
+  .my-works ol {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonials p {
+    font-size: 12px;
+    padding: 8px;
+    margin: 8px auto;
+    height: auto;
+    max-width: 90%;
+    text-align: center;
+    line-height: 1.5;
+    word-wrap: break-word; /* Prevents text overflow */
+  }
+
+  .contact-form {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-grid {
+    display: block; /* Stack elements vertically */
+  }
+
+  .form-grid label,
+  .form-grid input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%; /* Ensure elements take full width */
+    font-size: 12px;
+  }
+}
+
+/* Mobile M */
+@media (min-width: 321px) and (max-width: 375px) {
+  body {
+    font-size: 13px;
+  }
+  .header > img {
+    display: none;
+  }
+  .photos img {
+    width: 100%;
+    height: auto;
+  }
+  .interest ul,
+  .my-works ol {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .testimonials p {
+    font-size: 13px;
+    padding: 10px;
+    margin: 10px auto;
+    height: auto;
+    max-width: 90%;
+    text-align: center;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+
+  .contact-form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-grid {
+    display: block;
+  }
+
+  .form-grid label,
+  .form-grid input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
+/* Mobile L */
+@media (min-width: 376px) and (max-width: 425px) {
+  body {
+    font-size: 14px;
+  }
+  .header > img {
+    display: none;
+  }
+  .photos img {
+    width: 100%;
+    height: auto;
+  }
+  .interest ul,
+  .my-works ol {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .testimonials p {
+    font-size: 14px;
+    padding: 12px;
+    margin: 12px auto;
+    height: auto;
+    max-width: 90%;
+    text-align: center;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+
+  .contact-form {
+    padding: 20px;
+    width: 85%;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-grid {
+    display: block;
+  }
+
+  .form-grid label,
+  .form-grid input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 426px) and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  .header-intro,
+  .header > img {
+    width: 100%;
+  }
+
+  .header > img {
+    display: none;
+  }
+  .interest ul,
+  .my-works ol {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .testimonials p {
+    font-size: 15px;
+    padding: 15px;
+    margin: 15px auto;
+    height: auto;
+    max-width: 80%; 
+    text-align: center;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+  .photos img {
+    width: 100%;
+    height: auto;
+  }
+  .contact-form {
+    padding: 20px;
+    width: 80%;
+  }
+
+  .form-container {
+    padding: 25px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+
+  .form-grid label,
+  .form-grid input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    padding: 2rem;
+  }
+  .interest ul,
+  .my-works ol {
+    gap: 2rem;
+  }
+  .photos img {
+    width: 30%;
+    margin: 1rem;
+  }
+  .contact-form {
+    width: 70%;
+  }
+
+  .form-container {
+    padding: 30px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+  }
+
+  .form-grid label,
+  .form-grid input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 16px;
+  }
 }
