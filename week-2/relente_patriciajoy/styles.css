@@ -299,6 +299,31 @@ li {
     width: 500px;
 }
 
+@media (max-width: 320px) {
+    .greet h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+
+    .container img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    .greet h1 {
+        font-size: 1.8rem;
+    }
+
+    .wrapper {
+        padding: 5px;
+    }
+}
+
 @media (max-width: 800px) {
     .contact-inputs {
         width: 80vw;
@@ -332,7 +357,7 @@ li {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     .header {
         display: flex;
         flex-direction: column;
