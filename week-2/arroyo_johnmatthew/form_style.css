@@ -3,7 +3,7 @@
     height: 490px;
     width: 530px;
     background-color: gray;
-    background-image: url("../images/form.png");
+    background-image: url("./images/form.png");
     background-repeat: no-repeat;
     background-size: 200px 150px;
     position: fixed;
@@ -43,7 +43,7 @@ input[type=text], input[type=email] {
 }
 
 body {
-    background-image: url("../images/bg.jpg");
+    background-image: url("./images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
 }
