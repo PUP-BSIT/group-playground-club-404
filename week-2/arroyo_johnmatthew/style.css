@@ -283,7 +283,6 @@ body {
   #testimonial {
     position: relative;
     left: 570px;
-    top: 370px;
     width: 400px;
   }
 
@@ -292,9 +291,9 @@ body {
   }
 
   #gallery {
-    width: 900px;
+    width: 1100px;
     position: relative;
-    left: 50px;
+    left: 90px;
   }
 
   .gallery-image-1 {
@@ -327,7 +326,7 @@ body {
   #button {
     border-radius: 20px;
     position: relative;
-    left: 220px;
+    left: 190px;
     top: 150px;
     background-color: red;
     font-size: 30px;
