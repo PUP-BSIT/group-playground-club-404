@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arroyo John Matthew Page</title>
     <link href="style.css" rel="stylesheet"/>
     <link href="form_style.css" rel="stylesheet"/>
@@ -79,9 +82,24 @@
         <img src="./images/Matt.jpg" class="gallery-image-1" />
         <img src="./images/Matt.jpg" class="gallery-image-1" />
       </div>
-      <div id="contact_form">
-        <h3>Contact Form</h3>
-        <a href="./web/form.html" target="_blank">FORMS</a>
+      <div id="form">
+        <h1>Contact Form</h1>
+        <form>
+          <div id="form_1">
+            <label for="user">Name:</label>
+            <input type="text" id="user" name="user">
+          </div>
+          <div id="form_2">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div id="form_3">
+            <h3>Give a review:</h3>
+            <label for="review"></label>
+            <textarea id="review" name="review"></textarea>
+          </div>
+          <button type="button" id="button">Submit</button>
+        </form>
       </div>
     </div>
   </body>
