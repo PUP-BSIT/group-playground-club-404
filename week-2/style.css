@@ -4,7 +4,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-image: url(Club404-cover.jpg);
-  background-position: center;
+  background-position: 0px -5px;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ a:hover {
 .name-container ul {
   position: absolute;
   right: 50%;
-  bottom: 290px;
+  bottom: 231px;
   width: 100%;
   transform: translateX(50%);
   display: flex;
