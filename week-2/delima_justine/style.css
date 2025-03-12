@@ -63,8 +63,7 @@ p {
     color: var(--color4);
     text-align: center;
     border: 3px dashed var(--color2);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 /* target: interest & hobbies container */
@@ -157,4 +156,434 @@ p {
 .third-row {
     display: flex;
     justify-content: space-evenly;
+}
+
+/* -target: contact form- */
+/* target: div form container. */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 100%;
+}
+
+/* target: form element */
+form {
+    height: 288px;
+    width: 400px;
+    padding: 10px;
+    background-color: var(--color2);
+}
+
+/* target: form class input */
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* target:  textarea*/
+textarea {
+    height: 100px;
+    width: 100%;
+} 
+
+input {
+    height: 29px;
+    width: 100%;
+}
+
+/* target: div of button */
+#submit_button {
+    display: flex;
+    justify-content: center;
+}
+
+/* target: button */
+button {
+    border: none;
+    width: 150px;
+    height: 29px;
+    background-color: var(--color4);
+    font-family: monospace;
+    font-weight: 900;
+    font-size: large;
+    cursor: pointer;
+}
+
+/* target: fieldset */
+fieldset {
+    height: 330px;
+    width: 420px;
+    border-radius: 5px;
+}
+
+/* target: legend */
+legend {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: var(--color4);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px; 
+}
+
+/* ------------------------- Mobile S ---------------------------- */
+@media(min-width: 320px) {
+    /* target: header container */
+    .header-container {
+        background-color: var(--color2);
+        display: flex;
+        justify-content: center;
+        gap: 55px;
+        padding: 50px;
+        padding-bottom: 0px;
+        margin: auto;
+    }
+
+    /* target: testimonials */
+    .testimonials-container {
+        padding: 50px 10px;
+        border: 5px solid var(--color2);
+    }
+
+    /* target: my works */
+    .works-container {
+        border: 5px solid var(--color2);
+        padding: 50px 50px;
+        margin: auto;
+    }
+
+    /* target: my works ordered list */
+    .works-container ol {
+        color: var(--color4);
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        padding-left: 0;
+    }   
+
+    /* target: images in gallery */
+    .gallery-container img {
+        margin-left: 0;
+        margin-right: 0;
+        height: 100%;
+        width: 100%;
+        border: 5px solid var(--color2);
+        border-radius: 5px;
+    }
+
+    /* target: mitsuki image only. */
+    #mitsuki_image {
+        margin-top: 0;
+        height: 115px;
+    }
+
+    /* target: row 1 images */
+    .first-row {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        gap: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* target: row 2 images */
+    .second-row {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        gap: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* target: row 3 images  */
+    .third-row {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        gap: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* target: div form container. */
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 485px;
+        width: 100%;
+    }
+
+    /* target: form element */
+    form {
+        height: 288px;
+        width: 258px;
+        padding: 10px;
+        background-color: var(--color2);
+    }
+}
+
+/* ------------------ Mobile M Size ------------------------ */ 
+@media(min-width: 321px) and (max-width: 375px) {
+    #mitsuki_image {
+        margin-top: 0;
+        height: 150px;
+    }
+
+    /* target: div form container. */
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 490px;
+        width: 100%;
+    }
+
+    /* target: form element */
+    form {
+        height: 288px;
+        width: auto;
+        padding: 10px;
+        background-color: var(--color2);
+    }
+}
+
+/* ------------------ Mobile L Size ------------------------ */
+@media(min-width: 376px) and (max-width: 425px) {
+    #mitsuki_image {
+        height: 200px;
+    }
+
+    /* target: div form container. */
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+    }
+
+    /* target: form element */
+    form {
+        height: 288px;
+        width: auto;
+        padding: 10px;
+        background-color: var(--color2);
+    }
+}
+
+/* ------------------ Tablet Size ------------------------ */
+@media(min-width: 426px) and (max-width: 768px){
+    #mitsuki_image {
+        height: 330px;
+    }
+
+    /* target: div form container. */
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 510px;
+        width: 100%;
+    }
+
+    /* target: form element */
+    form {
+        height: 288px;
+        width: auto;
+        padding: 10px;
+        background-color: var(--color2);
+    }
+}
+
+/* ------------------ Laptop Size ------------------------ */
+@media(min-width: 769px) and (max-width: 1024px) {
+    /* target: paragraphs. */
+    p {
+        color: var(--color4);
+        text-align: center;
+        border: 3px dashed var(--color2);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* target: interest & hobbies container */
+    .inthobb-container {
+        padding: 50px 50px;
+        border: 5px dashed var(--color2);
+    }
+
+    /* target: interest & hobbies unordered list */
+    .inthobb-container ul {
+        color: var(--color4);
+        font-weight: lighter;
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .inthobb-container li {
+        margin-top: 20px;
+    }
+
+    /* target: my works */
+    .works-container {
+        border: 5px solid var(--color2);
+        padding: 50px 50px;
+        margin: auto;
+    }
+
+    /* target: my works ordered list */
+    .works-container ol {
+        color: var(--color4);
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-left: 0;
+    }
+
+    /* target: my works links */
+    .links-container ol a {
+        color: var(--color4);
+        text-decoration: none;
+        border: 3px solid var(--color2);
+        padding: 4px 15px;
+        background-color: var(--color5); 
+    }
+
+    /* target: testimonials */
+    .testimonials-container {
+        padding: 50px 50px;
+        border: 5px solid var(--color2);
+    }
+
+    /* target: my gallery */
+    .gallery-container {
+        padding: 50px 50px;
+        border: 5px solid var(--color2);
+    }
+
+    /* target: images in gallery */
+    .gallery-container img {
+        margin-left: 0;
+        margin-right: 0;
+        height: 100%;
+        width: 48%;
+        border: 5px solid var(--color2);
+        border-radius: 5px;
+    }
+
+    /* target: mitsuki image only. */
+    #mitsuki_image {
+        margin-top: 30px;
+        height: 240px;
+    }
+
+    /* target: row 1 images */
+    .first-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+
+    /* target: row 2 images */
+    .second-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+
+    /* target: row 3 images  */
+    .third-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 510px;
+        width: 100%;
+    }
+
+    /* target: form element */
+    form {
+        height: 288px;
+        width: auto;
+        padding: 10px;
+        background-color: var(--color2);
+    }
+}
+
+/* ------------------ Above Size ------------------------ */
+@media(min-width: 1025px) {
+    /* target: images in gallery */
+    .gallery-container img {
+        margin-left: 0;
+        margin-right: 0;
+        height: 100%;
+        width: 48%;
+        border: 5px solid var(--color2);
+        border-radius: 5px;
+    }
+
+    /* target: mitsuki image only. */
+    #mitsuki_image {
+        margin-top: 37px;
+        height: 100%;
+    }
+
+    /* target: row 1 images */
+    .first-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+
+    /* target: row 2 images */
+    .second-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+
+    /* target: row 3 images  */
+    .third-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* target: div form container. */
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 550px;
+        width: 100%;
+    }
+
+    /* target: form element */
+    form {
+        height: 288px;
+        width: 400px;
+        padding: 10px;
+        background-color: var(--color2);
+    }
 }
