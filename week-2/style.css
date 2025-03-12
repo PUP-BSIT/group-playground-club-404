@@ -92,28 +92,67 @@ li a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+/* Mobile Small Size */
+@media(min-width: 320px) {
   body {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .name-container {
-    column-count: 1;
-    max-width: 100%;
+    background-position: -320px 0px;
   }
 
   .name-container ul {
-    position: static;
-    transform: none;
-    flex-direction: column;
-    align-items: center;
+    height: 240px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0;
+    bottom: 70px;
+    gap: 13px;
+  }
+}
+
+/* Mobile M Size */
+@media (min-width: 321px) and (max-width: 375px) {
+  body {
+    background-position: -266px 0px;
+  }
+}
+
+/* Mobile L Size */
+@media (min-width: 376px) and (max-width: 425px) {
+  body {
+    background-position: -249px 0px;
+  }
+}
+
+/* Tablet Size */
+@media (min-width: 426px) and (max-width: 768px) {
+  body {
+    background-position: -78px 0px;
   }
 
-  a {
-    font-size: 16px;
-    padding: 0.5rem;
-    width: 80%;
-    text-align: center;
+  .name-container ul {
+    height: 146px;
+    width: 90%;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3px 0;
+    gap: 2rem;
+    bottom: 118px;
+  }
+}
+
+/* Laptop Size */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-position: 0px 0px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-position: 0px 0px;
   }
 }
