@@ -338,6 +338,18 @@ li {
     }
 }
 
+@media (min-width: 376px) and (max-width: 425px) {
+    .contact-left-title h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .contact-left-title hr {
+        width: 60%;
+        margin: auto;
+    }
+}
+
 @media (min-width: 426px) and (max-width: 768px) {
     .header {
         display: flex;
@@ -405,5 +417,22 @@ li {
         width: 90%;
         text-align: center;
         margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-left-title h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-left-title hr {
+        width: 80px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .contact-left-title h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
     }
 }
