@@ -160,6 +160,43 @@ body {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  #hobbies {
+    border-radius: 60px;
+    padding: 20px;
+    width: 360px;
+    height: 170px;
+    background: #101820ff;
+    color: #A0E7E5;
+    border: 5px solid black;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+
+  #testimonial {
+    position: relative;
+    left: 450px;
+  }
+
+  #form {
+    background-color: gray;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    position: relative;
+    bottom: 280px;
+    left: 10px;
+  }
+
+  #button {
+    border-radius: 20px;
+    position: relative;
+    left: 120px;
+    top: 8px;
+    background-color: red;
+  }
+}
+
 
 
 
