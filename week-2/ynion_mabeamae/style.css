@@ -281,18 +281,20 @@ p {
   font-size: 30px;
 }
 
-/* Mobile S */
 @media (max-width: 320px) {
   body {
     font-size: 12px;
   }
+
   .header > img {
     display: none;
   }
+
   .photos img {
     width: 100%;
     height: auto;
   }
+
   .interest ul,
   .my-works ol {
     flex-direction: column;
@@ -307,7 +309,7 @@ p {
     max-width: 90%;
     text-align: center;
     line-height: 1.5;
-    word-wrap: break-word; /* Prevents text overflow */
+    word-wrap: break-word; 
   }
 
   .contact-form {
@@ -320,30 +322,32 @@ p {
   }
 
   .form-grid {
-    display: block; /* Stack elements vertically */
+    display: block; 
   }
 
   .form-grid label,
   .form-grid input,
   .contact-form textarea,
   .contact-form button {
-    width: 100%; /* Ensure elements take full width */
+    width: 100%; 
     font-size: 12px;
   }
 }
 
-/* Mobile M */
 @media (min-width: 321px) and (max-width: 375px) {
   body {
     font-size: 13px;
   }
+
   .header > img {
     display: none;
   }
+
   .photos img {
     width: 100%;
     height: auto;
   }
+
   .interest ul,
   .my-works ol {
     flex-direction: column;
@@ -383,18 +387,20 @@ p {
   }
 }
 
-/* Mobile L */
 @media (min-width: 376px) and (max-width: 425px) {
   body {
     font-size: 14px;
   }
+
   .header > img {
     display: none;
   }
+
   .photos img {
     width: 100%;
     height: auto;
   }
+
   .interest ul,
   .my-works ol {
     flex-direction: column;
@@ -434,13 +440,13 @@ p {
   }
 }
 
-/* Tablet */
 @media (min-width: 426px) and (max-width: 768px) {
   .header {
     flex-direction: column;
     text-align: center;
     padding: 1rem;
   }
+
   .header-intro,
   .header > img {
     width: 100%;
@@ -449,6 +455,7 @@ p {
   .header > img {
     display: none;
   }
+
   .interest ul,
   .my-works ol {
     flex-direction: column;
@@ -465,10 +472,12 @@ p {
     line-height: 1.6;
     word-wrap: break-word;
   }
+
   .photos img {
     width: 100%;
     height: auto;
   }
+
   .contact-form {
     padding: 20px;
     width: 80%;
@@ -492,19 +501,21 @@ p {
   }
 }
 
-/* Laptop */
 @media (min-width: 769px) and (max-width: 1024px) {
   .header {
     padding: 2rem;
   }
+
   .interest ul,
   .my-works ol {
     gap: 2rem;
   }
+
   .photos img {
     width: 30%;
     margin: 1rem;
   }
+
   .contact-form {
     width: 70%;
   }
