@@ -58,7 +58,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     background-color: rgb(252, 225, 246);
     color: #594a4e;
     align-items: center;
@@ -86,6 +86,21 @@ h2 {
     display: block;
     margin: auto;
     background-color: #fce4ec;
+}
+
+.interest-hobbies h2,
+.my-works h2 {
+    background-color: #fce4ec;
+    background: rgba(255, 182, 193, 0.7);
+    text-align: center;
+    color: #703d57;
+    padding: 10px 20px;
+    border: 3px solid #fadadd;
+    border-radius: 15px;
+    width: fit-content;
+    display: inline-block;
+    margin: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .interest-hobbies,
@@ -159,12 +174,65 @@ li {
     text-align: center;
 }
 
-.testimonial {
+.testimonial-container {
+    background: url('https://www.transparenttextures.com/patterns/lined-paper.png');
+    border: 3px solid #f4c2c2;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.testimonials {
+    background: #ffe4e1;
+    padding: 15px;
     border-radius: 10px;
-    border-color: #33272a;
-    background-color: #ffc6c7;
+    box-shadow: inset 0 0 10px #ffb6c1;
+}
+
+.testimonial h2 {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 24px;
+    color: #594a4e;
+    background-color: #fce4ec;
+    background: rgba(255, 182, 193, 0.7);
+    border: 3px solid #fadadd;
+    border-radius: 15px;
+}
+
+.testimonial {
     padding: 10px;
+    border-radius: 8px;
+    border-color: #33272a;
     margin-top: 10px;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.fa-sparkles, .fa-heart {
+    display: inline-block;  /* Ensures animations work */
+    color: red;
+    animation: sparkles 1.5s infinite;
+}
+
+@keyframes sparkles {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.fa-sparkles {
+    color: gold;
+    animation: sparkles 1.5s infinite;
+}
+
+.fa-heart {
+    color: red;
+    animation: sparkles 2s infinite;
 }
 
 .my-gallery {
@@ -297,6 +365,183 @@ li {
     width: 500px;
 }
 
+#my_goals {
+    background: linear-gradient(to right, #f8c8dc, #f6a5c0);
+    margin-bottom: 20px;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: #33272a;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+#my_goals h2,
+#goal_comments h3 {
+    background-color: #fce4ec;
+    background: rgba(255, 182, 193, 0.7);
+    text-align: center;
+    color: #703d57;
+    padding: 10px 20px;
+    border: 3px solid #fadadd;
+    border-radius: 15px;
+    width: fit-content;
+    display: inline-block;
+    margin: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#my_goals ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    list-style-type: none;
+}
+
+#my_goals li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    background: #ffedf5;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#goal_comments {
+    background-color: #ffe6f2;
+    color: #594a4e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comments-list {
+    margin-bottom: 10px;
+}
+
+#comment_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#comment_form input, #comment_form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f8a2c2;
+    border-radius: 5px;
+}
+
+#comment_form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    background-color: #ffe6f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#comment_name,
+#comment_text {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #f8a2c2;
+    border-radius: 5px;
+}
+#comment_btn {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: not-allowed;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#comment_btn:enabled {
+    background-color: #ff7aa2;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: background 0.3s;
+}
+
+#comment_btn:hover:enabled {
+    background: linear-gradient(135deg, #ff4d6d, #ff94b1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#comment_form textarea:focus {
+    border: 2px solid #a363aa;
+    outline: none; 
+}
+
+#comment_form input:focus {
+    border: 2px solid #a363aa;
+    outline: none; 
+}
+
+.comment-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffe6f0;
+}
+
+.comment strong {
+    color: #944d75;
+}
+
+.comment {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    border: 1px solid #f8a2c2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ffb6c1;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: violet;
+    outline: none;
+    box-shadow: 0 0 5px violet;
+}
+
 @media (max-width: 320px) {
     .greet h1 {
         font-size: 1.5rem;
@@ -320,7 +565,7 @@ li {
         width: 50%;
         margin: auto;
     }
-}
+} 
 
 @media (min-width: 321px) and (max-width: 375px) {
     .greet h1 {
@@ -374,6 +619,7 @@ li {
     .my-gallery {
         width: 100%;
         padding: 10px;
+        margin-bottom: 50px; 
     }
 
     .my-gallery h2 {
@@ -382,6 +628,11 @@ li {
 
     .container {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    
+    .contact-container form { 
+        margin-top: 250px;
+        margin-bottom: 250px; 
     }
 }
 
@@ -416,6 +667,10 @@ li {
         text-align: center;
         margin-bottom: 20px;
     }
+
+    #my_goals {
+        margin-top: 50px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -426,11 +681,19 @@ li {
     .contact-left-title hr {
         width: 80px;
     }
+
+    #my_goals {
+        margin-top: 100px;
+    }
 }
 
 @media (min-width: 1025px) {
     .contact-left-title h2 {
         font-size: 3rem;
         margin-bottom: 10px;
+    }
+
+    #my_goals {
+        margin-top: 100px;
     }
 }
