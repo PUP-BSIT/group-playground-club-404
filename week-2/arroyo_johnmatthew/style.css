@@ -245,6 +245,17 @@ body {
     width: 300px;
     height: 128px;
   }
+
+  #comment_container {
+    position: absolute;
+    top: 800px;
+    left: 5px;
+    width: 382px;
+    height: 239px;
+    background-color: gray;
+    border: 5px solid #655034;
+    border-radius: 15px;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
@@ -317,6 +328,17 @@ body {
     border: 5px solid black;
     margin-bottom: 10px;
     list-style: none;
+  }
+
+  #comment_container {
+    position: absolute;
+    top: 709px;
+    left: 5px;
+    width: 455px;
+    height: 239px;
+    background-color: gray;
+    border: 5px solid #655034;
+    border-radius: 15px;
   }
 
   #testimonial {
@@ -418,6 +440,26 @@ input#user_name {
   #hobbies {
     width: 300px;
     font-size: 16px;
+  }
+
+  #comment_container {
+    position: absolute;
+    top: 800px;
+    left: 5px;
+    width: 887px;
+    height: 322px;
+    background-color: gray;
+    border: 5px solid #655034;
+    border-radius: 15px;
+  }
+
+  #comment_container > h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #comment_container > p {
+    font-size: 19px;
   }
 
   #works {
@@ -560,6 +602,26 @@ input#user_name {
     font-size: 16px;
   }
 
+  #comment_container {
+    position: absolute;
+    top: 800px;
+    left: 5px;
+    width: 887px;
+    height: 322px;
+    background-color: gray;
+    border: 5px solid #655034;
+    border-radius: 15px;
+  }
+
+  #comment_container > h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #comment_container > p {
+    font-size: 19px;
+  }
+
   .add-comment > h2 {
     font-size: 45px;
     background-color: #5F6062;
@@ -685,7 +747,7 @@ input#user_name {
   #form_3 {
     color: #87CEEB;
   }
-  
+
   #button {
     border-radius: 20px;
     position: absolute;
