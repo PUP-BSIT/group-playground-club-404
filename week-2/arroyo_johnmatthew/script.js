@@ -5,6 +5,6 @@ function buttonEnabler() {
 	if(comment.value.length > 0 && name.value.length > 0) {
 		document.getElementById("comment_button").disabled = false;
     } else {
-		document.getElementById("comment_btn").disabled = true;
+		document.getElementById("comment_button").disabled = true;
 	}
 }
