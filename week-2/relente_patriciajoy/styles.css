@@ -629,10 +629,9 @@ input:focus, textarea:focus {
     .container {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
-    
-    .contact-container form { 
-        margin-top: 250px;
-        margin-bottom: 250px; 
+
+    .contact-container {
+        height: 50vh;
     }
 }
 
@@ -668,8 +667,8 @@ input:focus, textarea:focus {
         margin-bottom: 20px;
     }
 
-    #my_goals {
-        margin-top: 50px;
+    .contact-container {
+        height: auto;
     }
 }
 
@@ -682,6 +681,10 @@ input:focus, textarea:focus {
         width: 80px;
     }
 
+    .contact-container {
+        height: 70vh;
+    }
+
     #my_goals {
         margin-top: 100px;
     }
@@ -691,6 +694,10 @@ input:focus, textarea:focus {
     .contact-left-title h2 {
         font-size: 3rem;
         margin-bottom: 10px;
+    }
+
+    .contact-container {
+        height: auto;
     }
 
     #my_goals {
