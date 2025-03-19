@@ -469,27 +469,29 @@ li {
 #comment_btn {
     background: linear-gradient(90deg, #ff758c, #ff7eb3);
     color: white;
+    background-color: #ff85a2;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
-    cursor: not-allowed;
+    cursor: pointer;
     font-size: 16px;
+    opacity: 1;
     transition: all 0.3s ease;
 }
 
-#comment_btn:enabled {
-    background-color: #ff7aa2;
+#comment_btn:disabled {
+    background-color: #f8b5c0;
     color: white;
     border: none;
     padding: 8px;
-    cursor: pointer;
+    cursor: not-allowed;
     border-radius: 5px;
     opacity: 0.5;
     transition: background 0.3s;
 }
 
-#comment_btn:hover:enabled {
-    background: linear-gradient(135deg, #ff4d6d, #ff94b1);
+#comment_btn:not(:disabled):hover {
+    background: #ff6780; 
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -540,6 +542,10 @@ input:focus, textarea:focus {
     border-color: violet;
     outline: none;
     box-shadow: 0 0 5px violet;
+}
+
+button {
+    pointer-events: none;
 }
 
 @media (max-width: 320px) {
