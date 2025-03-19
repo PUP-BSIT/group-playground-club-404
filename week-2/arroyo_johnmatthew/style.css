@@ -90,7 +90,7 @@ h2 {
 body {
   margin: 0;
   background: #2a2b2dff;
-  height: 500vh;
+  height: 200vh;
 }
 
 #contact_form {
@@ -245,6 +245,17 @@ body {
     width: 300px;
     height: 128px;
   }
+
+  #comment_container {
+    position: absolute;
+    top: 800px;
+    left: 5px;
+    width: 382px;
+    height: 239px;
+    background-color: gray;
+    border: 5px solid #655034;
+    border-radius: 15px;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
@@ -319,6 +330,17 @@ body {
     list-style: none;
   }
 
+  #comment_container {
+    position: absolute;
+    top: 709px;
+    left: 5px;
+    width: 455px;
+    height: 239px;
+    background-color: gray;
+    border: 5px solid #655034;
+    border-radius: 15px;
+  }
+
   #testimonial {
     position: absolute;
     top: 800px;
@@ -372,17 +394,17 @@ body {
     left: 63px;
     top: 290px;
     background-color: red;
- }
+  }
 
  #goal_container {
     top: 1483px;
     grid-row-gap: 0px;
- }
+  }
 
  #comment_button {
   position: absolute;
   top: 649px;
- }
+  }
 
  .add-comment > h2 {
   text-align: center;
@@ -391,7 +413,7 @@ body {
   border-radius: 40px;
   }
 
-input#user_name {
+  input#user_name {
   width: 200px;
   height: 20px;
   position: absolute;
@@ -418,6 +440,26 @@ input#user_name {
   #hobbies {
     width: 300px;
     font-size: 16px;
+  }
+
+  #comment_container {
+    position: absolute;
+    top: 800px;
+    left: 5px;
+    width: 887px;
+    height: 322px;
+    background-color: gray;
+    border: 5px solid #655034;
+    border-radius: 15px;
+  }
+
+  #comment_container > h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #comment_container > p {
+    font-size: 19px;
   }
 
   #works {
@@ -560,6 +602,26 @@ input#user_name {
     font-size: 16px;
   }
 
+  #comment_container {
+    position: absolute;
+    top: 800px;
+    left: 5px;
+    width: 887px;
+    height: 322px;
+    background-color: gray;
+    border: 5px solid #655034;
+    border-radius: 15px;
+  }
+
+  #comment_container > h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #comment_container > p {
+    font-size: 19px;
+  }
+
   .add-comment > h2 {
     font-size: 45px;
     background-color: #5F6062;
@@ -656,7 +718,7 @@ input#user_name {
   }
 
   #form {
-    background-color: gray;
+    background-color: #101820ff;;
     border-radius: 20px;
     padding: 10px;
     width: 371px;
@@ -668,6 +730,22 @@ input#user_name {
     background-repeat: no-repeat;
     background-size: 150px;
     background-position: 2px 2px;
+  }
+
+  #form > h1 {
+    color:#87CEEB;
+  }
+
+  #form_1 {
+    color: #87CEEB;
+  }
+
+  #form_2 {
+    color: #87CEEB;
+  }
+
+  #form_3 {
+    color: #87CEEB;
   }
 
   #button {

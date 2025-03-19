@@ -1,5 +1,5 @@
 // Function to check if the input and textarea are filled.
-function checkComment() {
+function checkInput() {
 	let username = document.getElementById("input_name");
 	let usrComment = document.getElementById("comment_area");
 
