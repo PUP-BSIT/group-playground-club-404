@@ -157,6 +157,25 @@
 
       <div id="goal_comments">
         <h3>Comment Section</h3>
+
+        <form id="comment_form">
+          <div class="comment-box">
+            <input
+              type="text"
+              id="comment_name"
+              placeholder="Your Name"
+              required
+            />
+            <textarea
+              id="comment_text"
+              placeholder="Write a comment"
+              required
+            ></textarea>
+            <button type="submit" id="comment_btn" disabled>Comment</button>
+            <script src="site.js" defer></script>
+          </div>
+        </form>
+
         <div class="comment-list">
           <div class="comment">
             <p>
@@ -180,24 +199,6 @@
             <p><!-- Comment --></p>
           </div>
         </div>
-
-        <form id="comment_form">
-          <div class="comment-box">
-            <input
-              type="text"
-              id="comment_name"
-              placeholder="Your Name"
-              required
-            />
-            <textarea
-              id="comment_text"
-              placeholder="Write a comment"
-              required
-            ></textarea>
-            <button type="submit" id="comment_btn" disabled>Comment</button>
-            <script src="site.js" defer></script>
-          </div>
-        </form>
       </div>
     </section>
   </body>
