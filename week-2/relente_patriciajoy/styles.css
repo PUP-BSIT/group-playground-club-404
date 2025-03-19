@@ -682,7 +682,7 @@ input:focus, textarea:focus {
     }
 
     .contact-container {
-        height: 70vh;
+        height: auto;
     }
 
     #my_goals {
