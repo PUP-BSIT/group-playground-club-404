@@ -172,6 +172,71 @@ body {
   #button {
     background-color: red;
   }
+
+  #goal_container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(10 , 100px);
+    grid-row-gap: 1em;
+    position: absolute;
+    top: 1440px;
+  }
+
+  .my-goal {
+    grid-column: 1 / 5;
+    grid-row: 1 / 4;
+    font-size: 20px;
+    text-align: center;
+    border: 5px solid #655034;
+    background-color: gray;
+  }
+
+  .my-goal > h1 {
+    background-color: #5F6062;
+    border-radius: 40px;
+  }
+
+  .goal-text {
+    background-color: #DBD3D8;
+    border-radius: 10px;
+    width: 390px;
+  }
+
+  .add-comment {
+    grid-column: 1 / 5;
+    grid-row: 4 / 8;
+    border: 5px solid #655034;
+    background-color: gray;
+  }
+
+  .add-comment > h2 {
+    text-align: center;
+  }
+
+  input#user_name {
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 94px;
+    top: 453px;
+  }
+
+  input#user_comment {
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    text-align: center;
+    left: 95px;
+    top: 500px;
+  }
+
+  #comment_button {
+    position: absolute;
+    left: 159px;
+    top: 701px;
+    background-color: red;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
@@ -227,6 +292,10 @@ body {
     border: 5px solid black;
     color: #A0E7E5;
   }
+
+  #goal_container {
+    left: 14px;
+  }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -270,12 +339,12 @@ body {
 
   #gallery {
     position: absolute;
-    bottom: -27px;
+    top: 497px;
     left: 0px;
     border-radius: 60px;
     padding: 8px;
-    width: 552px;
-    height: 284px;
+    width: 541px;
+    height: 260px;
     background: #101820ff;
     color: #A0E7E5;
     border: 5px solid black;
@@ -296,6 +365,40 @@ body {
     top: 290px;
     background-color: red;
  }
+
+ #goal_container {
+    top: 1483px;
+    grid-row-gap: 0px;
+ }
+
+ #comment_button {
+  position: absolute;
+  top: 649px;
+ }
+
+ .add-comment > h2 {
+  text-align: center;
+  font-size: 30px;
+  background-color: #5F6062;
+  border-radius: 40px;
+  }
+
+input#user_name {
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  left: 95px;
+  top: 411px;
+  }
+
+  input#user_comment {
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    text-align: center;
+    left: 95px;
+    top: 465px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -373,6 +476,58 @@ body {
 
   #review {
     font-size: 20px;
+  }
+
+  #goal_container {
+    top: 1262px;
+    left: 67px;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(10, 100px)
+  }
+
+  .my-goal {
+    grid-column: 1 / 10 ;
+  }
+
+  .goal-text {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    position: relative;
+    left: 240px;
+  }
+
+  .add-comment {
+    grid-column: 1 / 10;
+  } 
+
+  .add-comment > h2 {
+    font-size: 50px;  
+  }
+
+  input#user_name {
+    width: 244px;
+    height: 51px;
+    position: absolute;
+    left: 315px;
+    top: 465px;
+  }
+
+  input#user_comment {
+    width: 386px;
+    height: 177px;
+    position: absolute;
+    text-align: center;
+    left: 245px;
+    top: 531px;
+  }
+
+  #comment_button {
+    position: absolute;
+    left: 376px;
+    top: 727px;
+    background-color: red;
+    font-size: 32px;
   }
 }
 
@@ -463,9 +618,7 @@ body {
     position: relative;
     top: 50px;
   } 
-}
 
-@media (min-width: 1025px) {
   #gallery {
     width: 1100px;
     position: absolute;
@@ -506,7 +659,60 @@ body {
     background-position: 410px 200px;
     top: 886px;
   }
+
+  #goal_container {
+    top: 1262px;
+    left: 191px;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(10, 100px)
+  }
+
+  .my-goal {
+    grid-column: 1 / 10 ;
+  }
+
+  .goal-text {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    position: relative;
+    left: 240px;
+  }
+
+  .add-comment {
+    grid-column: 1 / 10;
+  } 
+
+  .add-comment > h2 {
+    font-size: 50px;  
+  }
+
+  input#user_name {
+    width: 244px;
+    height: 51px;
+    position: absolute;
+    left: 315px;
+    top: 465px;
+  }
+
+  input#user_comment {
+    width: 386px;
+    height: 177px;
+    position: absolute;
+    text-align: center;
+    left: 245px;
+    top: 531px;
+  }
+
+  #comment_button {
+    position: absolute;
+    left: 387px;
+    top: 749px;
+    background-color: red;
+    font-size: 27px;
+  }
 }
+
 
 
 
