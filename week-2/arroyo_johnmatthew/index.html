@@ -121,13 +121,18 @@
             <input type="text" 
               id="user_name" 
               name="user_name" 
-              placeholder="Your Name">
-            <label for="user_comment"></label>
-            <input type="text"
+              placeholder="Your Name"
+              required
+              onInput="buttonEnabler()"/>
+            <textarea
               id="user_comment"
               name="user_comment"
-              placeholder="Your Comment">
-            <button type="button" id="comment_button">Submit</button>
+              placeholder="Your Comment"
+              required
+              onInput="buttonEnabler()">
+            </textarea>
+            <button type="button" id="comment_button" disabled>Submit</button>
+            <script src="script.js"></script>
           </form>
         </div>
       </div>
