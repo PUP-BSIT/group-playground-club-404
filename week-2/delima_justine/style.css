@@ -683,6 +683,28 @@ legend {
 
 /* ------------------ Above Size ------------------------ */
 @media(min-width: 1025px) {
+    /* target: interest & hobbies container */
+    .inthobb-container {
+        padding: 50px 50px;
+        border: 5px dashed var(--color2);
+    }
+
+    /* target: interest & hobbies unordered list */
+    .inthobb-container ul {
+        color: var(--color4);
+        font-weight: lighter;
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 104px;
+        justify-content: center;
+    }
+
+    .inthobb-container li {
+        margin-top: 20px;
+    }
+
     /* target: images in gallery */
     .gallery-container img {
         margin-left: 0;
@@ -741,6 +763,13 @@ legend {
 
     textarea {
         width: 100%;
+    }
+
+    .goals-container ol {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 70px;
     }
 
     .comment-container {
