@@ -168,6 +168,10 @@ body {
     left: 3px;
     border: 5px solid black;
   }
+
+  #button {
+    background-color: red;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
@@ -177,6 +181,29 @@ body {
     width: 382px;
     top: 1170px;
     left: 3px;
+    border: 5px solid black;
+  }
+
+  #works {
+    border-radius: 60px;
+    background: #101820ff;
+    height: 150px;
+    padding: 20px;
+    width: 329px;
+    border: 5px solid black;
+    color: #A0E7E5;
+  }
+
+  #gallery {
+    position: relative;
+    bottom: 320px;
+    left: 0px;
+    border-radius: 60px;
+    padding: 10px;
+    width: 360px;
+    height: 300px;
+    background: #101820ff;
+    color: #A0E7E5;
     border: 5px solid black;
   }
 }
@@ -190,13 +217,23 @@ body {
     left: 3px;
     border: 5px solid black;
   }
+
+  #works {
+    border-radius: 60px;
+    background: #101820ff;
+    height: 150px;
+    padding: 20px;
+    width: 374px;
+    border: 5px solid black;
+    color: #A0E7E5;
+  }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
   #hobbies {
     border-radius: 60px;
     padding: 20px;
-    width: 360px;
+    width: 257px;
     height: 170px;
     background: #101820ff;
     color: #A0E7E5;
@@ -226,12 +263,8 @@ body {
     height: 321px;
     border-radius: 20px;
   }
-
+  
   #button {
-    border-radius: 20px;
-    position: absolute;
-    top: 274px;
-    background-color: red;
     font-size: 30px;
   }
 
