@@ -237,6 +237,14 @@ body {
     background-color: red;
     font-size: 20px;
   }
+
+  textarea#user_comment {
+    position: absolute;
+    left: 53px;
+    top: 500px;
+    width: 300px;
+    height: 128px;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
@@ -399,6 +407,11 @@ input#user_name {
     left: 95px;
     top: 465px;
   }
+
+  textarea#user_comment {
+    position: absolute;
+    top: 467px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -502,7 +515,9 @@ input#user_name {
   } 
 
   .add-comment > h2 {
-    font-size: 50px;  
+    font-size: 45px;
+    background-color: #5F6062;
+    border-radius: 40px;  
   }
 
   input#user_name {
@@ -529,12 +544,26 @@ input#user_name {
     background-color: red;
     font-size: 32px;
   }
+
+  textarea#user_comment {
+    position: absolute;
+    left: 246px;
+    top: 534px;
+    width: 374px;
+    height: 161px;
+  }
 }
 
 @media (min-width: 1025px) {
   #hobbies {
     width: 300px;
     font-size: 16px;
+  }
+
+  .add-comment > h2 {
+    font-size: 45px;
+    background-color: #5F6062;
+    border-radius: 40px;  
   }
 
   #works {
@@ -710,6 +739,14 @@ input#user_name {
     top: 749px;
     background-color: red;
     font-size: 27px;
+  }
+
+  textarea#user_comment {
+    position: absolute;
+    left: 246px;
+    top: 560px;
+    width: 374px;
+    height: 161px;
   }
 }
 
