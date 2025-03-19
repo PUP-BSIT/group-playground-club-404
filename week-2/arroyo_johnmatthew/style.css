@@ -394,17 +394,17 @@ body {
     left: 63px;
     top: 290px;
     background-color: red;
- }
+  }
 
  #goal_container {
     top: 1483px;
     grid-row-gap: 0px;
- }
+  }
 
  #comment_button {
   position: absolute;
   top: 649px;
- }
+  }
 
  .add-comment > h2 {
   text-align: center;
@@ -413,7 +413,7 @@ body {
   border-radius: 40px;
   }
 
-input#user_name {
+  input#user_name {
   width: 200px;
   height: 20px;
   position: absolute;
