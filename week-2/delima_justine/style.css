@@ -50,7 +50,39 @@ h1 {
 }
 
 /* target: header 2 */
-h2 {
+.inthobb-container h2 {
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color4);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+
+.works-container h2 {
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color4);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+
+.testimonials-container h2 {
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color4);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+
+.gallery-container h2 {
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color4);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+
+.goals-container h2 {
     text-align: center;
     background-color: var(--color2);
     color: var(--color4);
@@ -59,11 +91,11 @@ h2 {
 }
 
 /* target: paragraphs. */
-p {
+.testimonials-container p {
     color: var(--color4);
     text-align: center;
-    border: 3px dashed var(--color2);
     padding: 10px;
+    border: 2px dashed var(--color2)
 }
 
 /* target: interest & hobbies container */
@@ -165,7 +197,8 @@ p {
     justify-content: center;
     align-items: center;
     height: 550px;
-    width: 100%;
+    width: 99%;
+    border: 5px solid var(--color2);
 }
 
 /* target: form element */
@@ -185,10 +218,11 @@ form {
     margin-bottom: 20px;
 }
 
-/* target:  textarea*/
+/* target:  textarea */
 textarea {
     height: 100px;
     width: 100%;
+    resize: none;
 } 
 
 input {
@@ -320,15 +354,100 @@ legend {
         justify-content: center;
         align-items: center;
         height: 485px;
-        width: 100%;
+        width: auto;
+        border: 5px solid var(--color2);
+    }
+
+    /* target: fieldset */
+    fieldset {
+        height: 330px;
+        width: 251px;
+        border-radius: 5px;
     }
 
     /* target: form element */
     form {
         height: 288px;
-        width: 258px;
+        width: 231px;
         padding: 10px;
         background-color: var(--color2);
+    }
+
+    /* Added for exercise 6 */
+    .goals-container {
+        height: auto;
+        width: auto;
+        padding: 50px;
+        border: 5px solid var(--color2);
+    }
+
+    .goal-list ol {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .goal-list li {
+        display: flex;
+        color: var(--color4);
+        list-style: none;
+        justify-content: center;
+    }
+
+    .comment-container {
+        border: 5px solid var(--color2);
+        padding: 50px 10px;
+    }
+
+    .comment-form form {
+        height: 300px;
+        width: auto;
+        padding: 7px;
+        background-color: var(--color2);
+        border: 2px dashed var(--color1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vh;
+    }
+
+    #input_name {
+        width: 225px;
+        border-radius: 10px;
+    }
+
+    #comment_area {
+        width: 225px;
+        border-radius: 10px;
+    }
+
+    label {
+        color: var(--color4);
+    }
+
+    .comment-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .comment-hdr-container h2 {
+        color: var(--color4);
+        text-align: center;
+        background-color: var(--color2);
+        padding: 15px;
+        margin: 0;
+    }
+
+    .comment-hdr-container p {
+        color: var(--color4);
+        border: 2px dashed var(--color2);
+        text-align: center;
+        padding: 10px;
     }
 }
 
@@ -345,7 +464,7 @@ legend {
         justify-content: center;
         align-items: center;
         height: 490px;
-        width: 100%;
+        width: auto;
     }
 
     /* target: form element */
@@ -369,7 +488,7 @@ legend {
         justify-content: center;
         align-items: center;
         height: 500px;
-        width: 100%;
+        width: auto;
     }
 
     /* target: form element */
@@ -383,6 +502,13 @@ legend {
 
 /* ------------------ Tablet Size ------------------------ */
 @media(min-width: 426px) and (max-width: 768px){
+    .inthobb-container ul {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        justify-content: center;
+    }
+    
     #mitsuki_image {
         height: 330px;
     }
@@ -393,7 +519,7 @@ legend {
         justify-content: center;
         align-items: center;
         height: 510px;
-        width: 100%;
+        width: auto;
     }
 
     /* target: form element */
@@ -403,19 +529,19 @@ legend {
         padding: 10px;
         background-color: var(--color2);
     }
+
+    .comment-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .comment-form form {
+        width: 361px;
+    }
 }
 
 /* ------------------ Laptop Size ------------------------ */
 @media(min-width: 769px) and (max-width: 1024px) {
-    /* target: paragraphs. */
-    p {
-        color: var(--color4);
-        text-align: center;
-        border: 3px dashed var(--color2);
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
     /* target: interest & hobbies container */
     .inthobb-container {
         padding: 50px 50px;
@@ -427,8 +553,11 @@ legend {
         color: var(--color4);
         font-weight: lighter;
         list-style: none;
-        text-align: center;
         padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 104px;
+        justify-content: center;
     }
 
     .inthobb-container li {
@@ -517,7 +646,7 @@ legend {
         justify-content: center;
         align-items: center;
         height: 510px;
-        width: 100%;
+        width: auto;
     }
 
     /* target: form element */
@@ -526,6 +655,29 @@ legend {
         width: auto;
         padding: 10px;
         background-color: var(--color2);
+    }
+
+    .goals-container ol {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .comment-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        padding: 20px 100px;
+    }
+
+    .comment-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .comment-form form {
+        width: 361px;
     }
 }
 
@@ -576,7 +728,7 @@ legend {
         justify-content: center;
         align-items: center;
         height: 550px;
-        width: 100%;
+        width: auto;
     }
 
     /* target: form element */
@@ -585,5 +737,25 @@ legend {
         width: 400px;
         padding: 10px;
         background-color: var(--color2);
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .comment-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        padding: 20px 100px;
+    }
+
+    .comment-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .comment-form form {
+        width: 361px;
     }
 }
