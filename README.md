@@ -1,5 +1,5 @@
 <div align="center">
-   <img width=200px height=250px src="https://github.com/PUP-BSIT/group-playground-club-404/blob/main/week-2/Club404-cover.jpg" />
+   <img width=500px height=250px src="https://github.com/PUP-BSIT/group-playground-club-404/blob/main/week-2/Club404-cover.jpg" />
 
 # CLUB-404
 
