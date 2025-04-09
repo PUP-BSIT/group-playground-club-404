@@ -1,5 +1,5 @@
 <div align="center">
-   <img width=500px height=250px src="https://github.com/PUP-BSIT/group-playground-club-404/blob/main/week-2/Club404-cover.jpg" />
+   <img width=500px height=250px src="https://github.com/PUP-BSIT/group-playground-club-404/tree/dc0ff0f4b2f3c42c2fdaec505db3cf62f08a6884/assets" />
 
 # CLUB-404
 
