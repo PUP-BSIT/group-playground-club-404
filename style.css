@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-image: url(./assets/club404-cover.jpg);
+  background-position: 0px -5px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, .4);
+  height: 100vh;
+  width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  font-size: 18px;
+  flex-wrap: wrap;
+  font-weight: 900;
+  word-spacing: 2.5px;
+  text-decoration: none;
+  color: white;
+  background-color: #3c3c3c;
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: 0 4px #000;
+  transition: all 0.1s ease;
+}
+
+a:hover {
+  background-color: #4c4c4c;
+  box-shadow: 0 2px #000;
+  transform: translateY(2px);
+}
+
+.name-container {
+  column-count: 3;
+  column-gap: 20px;
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.name-container ul {
+  position: absolute;
+  right: 50%;
+  bottom: 231px;
+  width: 100%;
+  transform: translateX(50%);
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  break-inside: avoid;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media(min-width: 320px) {
+  body {
+    background-position: -320px 0px;
+  }
+
+  .name-container ul {
+    height: 240px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0;
+    bottom: 70px;
+    gap: 13px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  body {
+    background-position: -266px 0px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  body {
+    background-position: -249px 0px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  body {
+    background-position: -78px 0px;
+  }
+
+  .name-container ul {
+    height: 146px;
+    width: 90%;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3px 0;
+    gap: 2rem;
+    bottom: 118px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-position: 0px 0px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-position: 0px 0px;
+  }
+}

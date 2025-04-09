@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arroyo John Matthew Page</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="form_style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com
+      /css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div>
+        <h1 id="name"><strong>Arroyo, John Matthew</strong></h1>
+      </div>
+      <div id="hobbies">
+        <h2>My interests and hobbies</h2>
+        <ul>
+          <li>Programming 🖥️</li>
+          <li>Reading 📚</li>
+          <li>Cycling 🚴🏻‍♀️</li>
+          <li>Watching Shows 📺</li>
+          <li>Playing PC Games 🕹️</li>
+        </ul>
+      </div>
+      <div id="works">
+        <h2>My works ✅</h2>
+        <ol>
+          <li>
+            <a href="./web/first.html" class="web-link"> First website </a>
+          </li>
+          <li>
+            <a href="./web/second.html" class="web-link"> Second website </a>
+          </li>
+          <li>
+            <a href="./web/third.html" class="web-link"> Third website </a>
+          </li>
+          <li>
+            <a href="./web/fourth.html" class="web-link"> Fourth website </a>
+          </li>
+          <li>
+            <a href="./web/fifth.html" class="web-link"> Fifth website </a>
+          </li>
+        </ol>
+      </div>
+      <div id="testimonial">
+        <h2>Testimonials</h2>
+        <p>
+          John Matthew Arroyo is a hardworking student. I like his ideas and
+          goals when making a project. With this website, I hope to know better
+          about him and to collaborate with projects soon! - Justine
+        </p>
+        <p>
+          You're always willing to help out, and your explanations are super
+          clear. It makes learning and collaborating so much easier. - Pat
+        </p>
+        <p>
+          Arroyo was a fantastic collaborator—reliable, skilled, and always
+          willing to help the team succeed. - Bea
+        </p>
+      </div>
+      <div id="gallery">
+        <h2>Gallery 📷</h2>
+        <img src="./images/Matt.jpg" class="gallery-image-1" />
+        <img src="./images/Matt.jpg" class="gallery-image-1" />
+        <img src="./images/Matt.jpg" class="gallery-image-1" />
+        <img src="./images/Matt.jpg" class="gallery-image-1" />
+        <img src="./images/Matt.jpg" class="gallery-image-1" />
+        <img src="./images/Matt.jpg" class="gallery-image-1" />
+      </div>
+      <div id="form">
+        <h1>Contact Form</h1>
+        <form>
+          <div id="form_1">
+            <label for="user">Name:</label>
+            <input type="text" id="user" name="user"/>
+          </div>
+          <div id="form_2">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"/>
+          </div>
+          <div id="form_3">
+            <h3>Give a review:</h3>
+            <label for="review"></label>
+            <textarea id="review" name="review"></textarea>
+          </div>
+          <button type="button" id="button">Submit</button>
+        </form>
+      </div>
+      <div id="goal_container">
+        <div class="my-goal">
+          <h1>My Goals</h1>
+          <div class="goal-text">
+            <p>Improve my programming skills in Python</p>
+          </div>
+          <div class="goal-text">
+            <p>Create a web portfolio</p>
+          </div>
+          <div class="goal-text">
+            <p>Improve my physical health</p>
+          </div>
+        </div>
+        <div class="add-comment">
+          <h2>Add a comment:</h2>
+          <form>
+            <label for="user_name"></label>
+            <input
+              type="text"
+              id="user_name"
+              name="user_name"
+              placeholder="Your Name"
+              required
+              onInput="buttonEnabler()"/>
+            <textarea
+              id="user_comment"
+              name="user_comment"
+              placeholder="Your Comment"
+              required
+              onInput="buttonEnabler()"
+            ></textarea>
+            <button 
+                type="button" 
+                id="comment_button" 
+                onClick="displayComment()"
+                disabled>
+                  Submit
+            </button>
+            <script src="script.js"></script>
+          </form>
+          <div id="comment_container">
+            <h2>Comments:</h2>
+            <div class="sort-form">
+              <label>Sort by:</label>
+              <button type="button" 
+                onClick="sortAscending()">
+                  Ascending
+              </button>
+              <button type="button" 
+                onClick="sortDescending()">
+                  Descending
+              </button> 
+            </div> 
+            <div class="comment-user">
+              <h2 class="commenter">Justine</h2>
+              <label class="date">3/19/2025, 9:59:47 PM</label>
+              <p class="comment-content">
+                I hope you achieve your goals! - Justine
+              </p>
+            </div>
+            <div class="comment-user">
+              <h2 class="commenter">Patricia</h2>
+              <label class="date">3/19/2025, 10:09:26 PM</label>
+              <p class="comment-content">
+                𐙚⋆°｡⋆That's a great goal! - Pat˚ʚ♡ɞ˚
+              </p>
+            </div>
+            <div class="comment-user">
+              <h2 class="commenter">Bea</h2>
+              <label class="date">3/19/2025, 10:18:28 PM</label>
+              <p class="comment-content">
+                Achieve your goals, I know you can do it! - Bea
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
