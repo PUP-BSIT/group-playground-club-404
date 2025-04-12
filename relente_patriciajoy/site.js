@@ -97,6 +97,5 @@ document.addEventListener("DOMContentLoaded", () => {
         allComments.forEach(comment => fragment.appendChild(comment));
         commentContainer.appendChild(fragment);
     }
-
     sortSelect.addEventListener("change", sortComments);
 });
