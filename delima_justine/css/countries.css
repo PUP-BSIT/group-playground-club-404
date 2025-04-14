@@ -97,9 +97,6 @@ body {
 	background-color: var(--color5);
 }
 
-@media (max-width: 320px) {
-}
-
 @media (min-width: 769px) and (max-width: 1024px) {
 	.country-info {
 		display: flex;
@@ -112,7 +109,23 @@ body {
 	}
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+	body {
+		display: flex;
+		align-items: center;
+	}
+
+	.related-countries {
+		width: 30em;
+	}
+}
+
 @media (min-width: 1025px) {
+	body {
+		display: flex;
+		align-items: center;
+	}
+
 	.country-info {
 		display: flex;
 		justify-content: center;
@@ -122,12 +135,8 @@ body {
 	.country-info h2 {
 		background-color: var(--color2);
 	}
-}
 
-/* Mobile S     @media (max-width: 320px) {...}
-/* Mobile M     @media (min-width: 321px) and (max-width: 375px) {...}
-/* Mobile L     @media (min-width: 376px) and (max-width: 425px) {...}
-/* Tablet       @media (min-width: 426px) and (max-width: 768px) {...}
-/* Laptop       @media (min-width: 769px) and (max-width: 1024px) {...}
-/* & Above      @media (min-width: 1025px) {...}
-*/
+	.related-countries {
+		width: 30em;
+	}
+}
