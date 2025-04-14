@@ -1,0 +1,142 @@
+:root {
+	--color1: #4B5945;
+	--color2: #66785F;
+	--color3: #91AC8F;
+	--color4: #EEEEEE;
+	--color5: #B2C9AD;
+	--color6: #173006;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: var(--color5);
+	font-family: Arial, Helvetica, sans-serif
+}
+
+#form_container h2 {
+	color: var(--color6);
+	background-color: var(--color3);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#form_container {
+	background-color: var(--color3);
+	height: auto;
+	padding: 10px;
+	border: 4px solid var(--color2);
+}
+
+#form_container h2 {
+	text-align: center;
+}
+
+#form_container form{
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+#form_container input {
+	height: 2em;
+	border: 1px solid var(--color1);
+	border-radius: 1em;
+	padding: .5em;
+}
+
+#form_container button {
+	border: 2px solid var(--color2);
+	border-radius: 1em;
+	color: var(--color4);
+	background-color: var(--color1);
+	width: 13em;
+	height: 2em;
+	cursor: pointer;
+}
+
+.country-info {
+	padding: 15px;
+	background-color: var(--color3);
+	border: 4px dashed var(--color2);
+}
+
+.country-info h2 {
+	text-align: center;
+	color: var(--color6);
+}
+
+.country-info span {
+	font-weight: bold;
+}
+
+.country-info p {
+	color: var(--color6);
+}
+
+.related-countries {
+	background-color: var(--color3);
+	padding: 10px;
+	border: 4px solid var(--color1);
+}
+
+.related-countries h2 {
+	color: var(--color6);
+	margin: 2em 0;
+	text-align: center;
+}
+
+.country-list {
+	list-style-type: none;
+	padding: 10px;
+	column-count: 2;
+	column-rule: 2px solid var(--color1);
+	background-color: var(--color5);
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.country-info {
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	.country-info h2 {
+		background-color: var(--color2);
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	body {
+		display: flex;
+		align-items: center;
+	}
+
+	.related-countries {
+		width: 30em;
+	}
+}
+
+@media (min-width: 1025px) {
+	body {
+		display: flex;
+		align-items: center;
+	}
+
+	.country-info {
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	.country-info h2 {
+		background-color: var(--color2);
+	}
+
+	.related-countries {
+		width: 30em;
+	}
+}

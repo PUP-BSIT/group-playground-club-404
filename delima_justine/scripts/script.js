@@ -1,9 +1,3 @@
-let date = new Date().toLocaleString();
-let dateContainer = document.getElementsByClassName('date');
-let username = document.getElementById("input_name");
-let comment = document.getElementById("comment_area");
-let submitButton = document.getElementById("comment_btn");
-
 const comments = [
 	{
 		date: '3/19/2025, 9:42:12 PM', 
@@ -22,6 +16,12 @@ const comments = [
 			you to the fulfillment of your dreams.`
 	}
 ];
+
+let date = new Date().toLocaleString();
+let dateContainer = document.getElementsByClassName('date');
+let username = document.getElementById("input_name");
+let comment = document.getElementById("comment_area");
+let submitButton = document.getElementById("comment_btn");
 
 function checkComment() {
 	if(username.value.length && comment.value.length) {
@@ -57,18 +57,18 @@ function ascendingOrder() {
 	let collectionOfComments = document.querySelectorAll(".comment");
 
 	comments.sort((a, b) => {
-        let firstDate = new Date(a.date);
-        let secondDate = new Date(b.date);
+			let firstDate = new Date(a.date);
+			let secondDate = new Date(b.date);
 
-        if (firstDate > secondDate) {
-            return 1;
-        }
+			if (firstDate > secondDate) {
+					return 1;
+			}
 
-        if (firstDate < secondDate) {
-            return -1;
-        }
+			if (firstDate < secondDate) {
+					return -1;
+			}
 
-        return 0;
+			return 0;
     })
 
     for (let index = 0; index < comments.length; index++) {

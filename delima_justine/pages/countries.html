@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Countries of the World</title>
+		<link href="/delima_justine/css/countries.css" rel="stylesheet"/>
+</head>
+		<div id="form_container">
+			<h2>Countries of the World</h2>
+			<form>
+				<input 
+					type="text" 
+					placeholder="Search for a country..." 
+					id="country_input">
+				<button 
+					type="button" 
+					id="search_btn"
+					onClick="getData()">
+						Search
+				</button>
+			</form>
+		</div>
+
+		<div class="country-info"></div>
+		<div class="related-countries">
+			<h2 id="related_countries_title"></h2>
+			<ol class="country-list"></ol>
+		</div>
+		<script src="/delima_justine/scripts/countries.js"></script>
+</body>
+</html>
