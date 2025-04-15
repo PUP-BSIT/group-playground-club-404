@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="country_form"> 
+      <form>
+        <input type="text" id="country_input" placeholder="Search a country"/>
+        <button type="button" 
+          id="search_button" 
+          onClick="displayCountry()">
+            Search  
+        </button>
+      </form>
+    </div>
+    <div id="country_info"></div>
+    <div id="related_countries">
+      <h2 id="related_countries_title"></h2>
+      <ul id="related_list"></ul>
+    </div>
+    <script src="script.js"></script>  
+  </body>
+</html> 

@@ -1,0 +1,125 @@
+body {
+    background-color: #F5E7DE;
+}
+
+#country_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#country_input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: rgb(223, 220, 220);
+}
+
+#search_button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#related_countries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#related_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    background-color: #F2BFA4;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#country_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media(min-width: 320px) {
+    #search_button {
+        position: relative;
+        left: 115px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    #country_input {
+        position: relative;
+        left: 23px;
+    }
+
+    #search_button {
+        position: relative;
+        left: 137px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    #country_input {
+        position: relative;
+        left: 48px;
+    }
+
+    #search_button {
+        position: relative;
+        left: 162px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 432px) {
+    #country_input {
+        position: relative;
+        left: 50px;
+    }
+
+    #search_button {
+        position: relative;
+        left: 155px;
+    }
+}
+
+@media (min-width: 433px) and (max-width: 768px) {
+    #search_button {
+        position: relative;
+        left: 11px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #search_button {
+        position: relative;
+        left: 11px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #search_button {
+        position: relative;
+        left: 11px;
+    }
+}
+
+
+
