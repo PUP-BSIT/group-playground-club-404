@@ -37,6 +37,24 @@ body {
   pad: 1rem;
 }
 
+.header > img {
+  width: 350px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin: 10px auto; 
+  display: block;
+  margin-right: 245px;
+  box-shadow: 0 0 25px lightblue, 0 0 50px lightblue;
+}
+
+.header-welcome {
+  font-size: 0.9em; 
+  color: lightblue; 
+  font-weight: bold; 
+  display: block; 
+  margin-top: 15px; 
+}
+
 .full-name {
   color: cyan;
 }
@@ -502,6 +520,7 @@ p:hover {
   .header-intro {
     width: 100%;
     text-align: center;
+    padding: 0 10px;
   }
 
   .header-intro span {
@@ -516,6 +535,11 @@ p:hover {
 
   .header > img {
     display: none;
+  }
+
+  .header-welcome {
+    margin-top: 10px;
+    font-size: 0.9em;
   }
 
   .interest ul,
@@ -618,6 +642,12 @@ p:hover {
 @media (min-width: 769px) and (max-width: 1024px) {
   .header {
     padding: 2rem;
+  }
+
+  .header > img {
+    width: 250px;
+    height: 250px;
+    margin-right: 100px;
   }
 
   .interest ul,

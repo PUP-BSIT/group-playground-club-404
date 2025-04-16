@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ynion, Ma. Bea Mae Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/CN.png" type="image/png" />
   </head>
   <body>
     <div class="header">
@@ -12,9 +13,10 @@
         <h1>
           Hi! there, I'm
           <span class="full-name">Ynion, Ma. Bea Mae</span>
+          <span class="header-welcome">Welcome to my website!</span>
         </h1>
       </div>
-      <img src="./images/cinnna.png" alt="Cinnamoroll" />
+      <img src="./images/bae.jpg" alt="Bea" />
     </div>
     <div class="interest">
       <h2>My interest and hobbies</h2>
@@ -32,8 +34,13 @@
       <h2>My works</h2>
       <ol>
         <li>
+          <a href="./countries/countries.html" target="_blank">
+            Countries of the World
+          </a>
+        </li>
+        <li>
           <a href="./works/work_a.html" target="_blank">
-            CRUD: File Handling
+            CRUD: File Handling COBOL
           </a>
         </li>
         <li>
@@ -93,11 +100,7 @@
           </div>
           <div>
             <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              cols="30"
-              rows="10">
+            <textarea id="message" name="message" cols="30" rows="10">
             </textarea>
           </div>
           <div class="checkbox-container">
@@ -149,7 +152,8 @@
               type="text"
               name="name"
               id="comment_name"
-              oninput="validateComment()"/>
+              oninput="validateComment()"
+            />
           </div>
           <div>
             <label for="comment_text">Comment</label>
@@ -166,8 +170,9 @@
             id="comment_button"
             type="button"
             onclick="addComment()"
-            disabled>
-              Comment
+            disabled
+          >
+            Comment
           </button>
         </form>
       </div>
