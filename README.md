@@ -1,5 +1,5 @@
 <div align="center">
-   <img width=400px height=450px src="./assets/club-404-logo.png" />
+   <img width=400px height=400px src="./assets/club404-dino-jabi.png" />
 
 # CLUB-404
 
