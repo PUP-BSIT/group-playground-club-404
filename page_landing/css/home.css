@@ -6,7 +6,13 @@ body {
 	background-color: var(--background-color);
 }
 
+.header-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .header-container img {
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 }
