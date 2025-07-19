@@ -1,0 +1,12 @@
+:root {
+  --background-color: #101114
+}
+
+body {
+	background-color: var(--background-color);
+}
+
+.header-container img {
+	width: 100px;
+	height: 100px;
+}
